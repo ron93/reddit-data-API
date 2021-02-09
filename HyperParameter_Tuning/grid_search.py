@@ -39,4 +39,4 @@ if __name__ == "__main__":
     model.fit(X,y)
 
     print(model.best_score_)
-    print(model._estimator_.get_params())
+    print(model.best_estimator_.get_params())
