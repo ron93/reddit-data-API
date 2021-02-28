@@ -11,6 +11,8 @@ alembic = "*"
 psycopg2 = "*"
 uvicorn = "*"
 python-dotenv = "*"
+databases = "*"
+asyncpg = "*"
 
 [dev-packages]
 
