@@ -12,9 +12,9 @@ def threads():
         reddits.append({'thread':th.thread, 'sentiment':th.sentiment,'time':th.time })
     return jsonify({'reddits':reddits})
 
-@main.route('/reddit/<id>/' ,methods=['GET'])
-def reddit(id):
-    th = Thread.query.filter(Thread.id == id)
+@main.route('/thread/<id>' ,methods=['GET'])
+def thread(id):
+    th = Thread.query.filter(Thread.id == id).first()
     reddit = []
     reddit.append({'thread':th.thread, 'sentiment':th.sentiment,'time':th.time })
     return jsonify({'reddit':reddit})
